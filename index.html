@@ -7,9 +7,20 @@
 <script src="//sitest.jp/tracking/experiment_js?u=5Ft_Tz_DiIIHcDN2"></script>
 <!-- End SiTest Web Experiment Code -->
 
+
+<!-- ローカル<script>
+(function(PID){
+  var script = document.createElement("script");
+  script.src = "http://localhost:8080/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
+  script.async = true;
+  document.head.appendChild(script);
+})("35");
+</script> -->
+
+
   
-  <!-- DEV環境 -->
-  <!-- <script>
+<!-- DEV環境 -->
+<!-- <script>
 (function(PID){
   var script = document.createElement("script");
   script.src = "https://tracking-dev.sitest.jp/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
@@ -18,15 +29,14 @@
 })("p687a15eea5fc5");
 </script> -->
 
-  
-
-   <!-- ローカル<script>
+<!--DEV環境　２つ目  -->
+<!-- <script>
 (function(PID){
   var script = document.createElement("script");
-  script.src = "http://localhost:8080/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
+  script.src = "https://tracking-dev.sitest.jp/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
   script.async = true;
   document.head.appendChild(script);
-})("35");
+})("p69144531d643e");
 </script> -->
 
 <!-- 本番 -->
@@ -38,16 +48,17 @@
   document.head.appendChild(script);
 })("p686b93f02ce2d");
 </script>
-  
-  <!--DEV環境　２つ目  -->
-<!-- <script>
+
+<!-- 本番　２つ目 -->
+  <script>
 (function(PID){
   var script = document.createElement("script");
-  script.src = "https://tracking-dev.sitest.jp/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
+  script.src = "https://tracking.sitest.jp/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
   script.async = true;
   document.head.appendChild(script);
-})("p69144531d643e");
-</script> -->
+})("p68708892a6142");
+</script>
+  
 
 </head>
 <body>
