@@ -40,14 +40,15 @@
 </script> -->
 
 <!-- 本番 -->
-<script>
+
+  <!--<script>
 (function(PID){
   var script = document.createElement("script");
   script.src = "https://tracking.sitest.jp/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
   script.async = true;
   document.head.appendChild(script);
 })("p686b93f02ce2d");
-</script>
+</script> -->
 
 <!-- 本番　２つ目 -->
   <!-- <script>
@@ -58,7 +59,17 @@
   document.head.appendChild(script);
 })("p68708892a6142");
 </script> -->
-  
+
+
+  <!--ステージング-->
+<script>
+(function(PID){
+  var script = document.createElement("script");
+  script.src = "https://tracking.stage.sitest.jp/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
+  script.async = true;
+  document.head.appendChild(script);
+})("p69c10df1b7ae3");
+</script>
 
 </head>
 <body>
